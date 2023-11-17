@@ -1,0 +1,17 @@
+:root {
+  --PrimaryColor: hsl(198, 100%, 33%);
+  --SecondaryColor: hsl(186, 85%, 43%);
+  --GradientColor: linear-gradient(
+    to right,
+    hsl(186, 85%, 43%),
+    hsl(198, 100%, 33%)
+  );
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(200, 33%, 16%);
+  --TextColor: hsl(239, 4%, 36%);
+  --WhiteColorDeam: hsl(0, 0%, 93%);
+  --GreyText: rgb(189, 189, 189);
+  --InputColor: rgb(238, 238, 238);
+  --BodyColor: rgb(239, 239, 245);
+  --CardBG: rgb(224, 224, 234);
+}
