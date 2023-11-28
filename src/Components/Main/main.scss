@@ -133,6 +133,25 @@
             color: var(--BlackColor);
           }
         }
+
+        .desc {
+          font-size: 13.5px;
+          color: var(--TextColor);
+          font-weight: 500;
+        }
+
+        .btn {
+          margin-top: 1rem;
+          color: var(--WhiteColor);
+          font-weight: 600;
+          justify-content: space-between;
+          gap: 0.5rem;
+
+          .icon {
+            align-self: center;
+            font-size: 18px;
+          }
+        }
       }
     }
   }
