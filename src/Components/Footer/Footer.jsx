@@ -45,7 +45,7 @@ const Footer = () => {
               Something something something Something something something
               Something something something
             </div>
-            <div className="footerSocials">
+            <div className="footerSocials flex">
               <AiOutlineTwitter className="icon" />
               <AiFillYoutube className="icon" />
               <AiFillInstagram className="icon" />
@@ -53,6 +53,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footerLinks grid">
+            {/* group one */}
             <div className="linkGroup">
               <span className="groupTitle">OUR AGENCY</span>
               <ul>
@@ -78,6 +79,65 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
+            {/* group two  */}
+            <div className="linkGroup">
+              <span className="groupTitle">PARTNERS</span>
+              <ul>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Bookings
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  RentCars
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  HostelWorld
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Trivago
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  TripAdvisor
+                </li>
+              </ul>
+            </div>
+
+            {/* group three  */}
+            <div className="linkGroup">
+              <span className="groupTitle">LAST MINUTE</span>
+              <ul>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  London
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  California
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Indonesia
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Europe
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Oceania
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="footerDiv flex">
+            <small>BEST TRAVEL WEBSITE THEME </small>
+            <small> COPYRIGHTS RESERVED - PD - 2023</small>
           </div>
         </div>
       </div>
