@@ -55,10 +55,28 @@ const Footer = () => {
           <div className="footerLinks grid">
             <div className="linkGroup">
               <span className="groupTitle">OUR AGENCY</span>
-              <li className="footerList flex">
-                <FiChevronRight className="icon" />
-                Services
-              </li>
+              <ul>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Services
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Insurance
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Agency
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Tourism
+                </li>
+                <li className="footerList flex">
+                  <FiChevronRight className="icon" />
+                  Payment
+                </li>
+              </ul>
             </div>
           </div>
         </div>
