@@ -176,3 +176,13 @@
     }
   }
 }
+
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+
+    .singleDestination {
+      height: auto;
+    }
+  }
+}
