@@ -18,24 +18,30 @@
 }
 
 .home {
+  height: 100%;
   width: 100%;
+  flex-direction: column;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: auto auto 20rem auto;
 }
-.home .overlay {
+
+/* .home .overlay { */
+.overlay {
   position: absolute;
   height: 100%;
   width: 100%;
   background: rgb(46, 105, 126);
   top: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
   mix-blend-mode: hard-light;
 }
-.home .video {
+
+/* .home .video { */
+.video {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -43,12 +49,14 @@
   bottom: 0;
   object-fit: cover;
 }
-.home .homeContent {
+
+/* .home .homeContent { */
+.homeContent {
   width: 100%;
   height: max-content;
-  padding: 8rem 1.5rem 3rem;
+  padding: 0 1.5rem 3rem;
   display: flex;
-  row-gap: 3rem;
+  row-gap: 1rem;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
@@ -56,40 +64,56 @@
   color: var(--WhiteColor);
   z-index: 100;
 }
-.home .homeContent .textDiv {
+
+/* .home .homeContent .textDiv { */
+.textDiv {
   padding: 2rem 0;
 }
-.home .homeContent .textDiv .smallText {
+
+/* .home .homeContent .textDiv .smallText { */
+.smallText {
   font-size: 13px;
   text-transform: uppercase;
 }
-.home .homeContent .textDiv .homeTitle {
+
+/* .home .homeContent .textDiv .homeTitle { */
+.homeTitle {
   position: relative;
   font-size: 1.8rem;
 }
-.home .homeContent .cardDiv {
+
+/* .home .homeContent .cardDiv { */
+.cardDiv {
   display: block;
   color: var(--TextColor);
   padding-bottom: 10px;
   font-size: 13px;
   font-weight: 500;
 }
-.home .homeContent .label_total {
+
+/* .home .homeContent .label_total { */
+.label_total {
   justify-content: space-between;
   align-items: center;
 }
-.home .homeContent .label_total .total {
+
+/* .home .homeContent .label_total .total { */
+.total {
   color: var(--TextColor);
   font-size: 18px;
   padding-bottom: 10px;
 }
-.home .homeContent .input {
+
+/* .home .homeContent .input { */
+.input {
   height: 40px;
   padding: 0 1rem;
   background: var(--InputColor);
   border-radius: 3rem;
 }
-.home .homeContent .input input {
+
+/* .home .homeContent .input input { */
+input {
   background: none;
   border: none;
   outline: none;
@@ -97,20 +121,27 @@
   font-size: 13px;
   font-weight: 500;
 }
-.home .homeContent .input input::placeholder {
+
+/* .home .homeContent .input input::placeholder { */
+input::placeholder {
   font-size: 13px;
 }
-.home .homeContent .input .icon {
+.input .icon {
   font-size: 18px;
-  color: var(--PrimaryColor) !important;
+  color: var(--WhiteColor) !important;
   margin-left: 10px;
 }
-.home .homeContent .input .input[type="range"] {
-  background: blue;
+
+/* .home .homeContent .input .input[type="range"] { */
+.input .input[type="range"] {
+  background: red;
 }
-.home .homeContent .searchOptions {
+
+/* .home .homeContent .searchOptions { */
+.searchOptions {
   position: absolute;
   background: var(--GradientColor);
+  color: var(--WhiteColor);
   width: max-content;
   bottom: -0.7rem;
   column-gap: 0.8rem;
@@ -161,7 +192,8 @@
   }
 }
 @media screen and (min-width: 660px) {
-  .home .homeContent .cardDiv {
+  /* .home .homeContent .cardDiv { */
+  .cardDiv {
     padding: 2rem 1rem;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -175,13 +207,21 @@
   .home {
     height: 80vh;
   }
-  .home .homeContent {
+
+  .overlay {
+    height: 190%;
+  }
+
+  /* .home .homeContent { */
+  .homeContent {
     padding-left: 0;
     padding-right: 0;
   }
-  .home .homeContent .cardDiv {
+
+  /* .home .homeContent .cardDiv { */
+  .cardDiv {
     padding: 2rem 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
   }
   .home .homeContent .cardDiv .input {
     margin-bottom: 1rem;

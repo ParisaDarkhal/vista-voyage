@@ -35,7 +35,7 @@
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  .header .navBar {
+  .navBar {
     position: absolute;
     background: var(--WhiteColorDeam);
     height: max-content;
@@ -49,49 +49,68 @@
     box-shadow: 0 2px 4px rgba(1, 14, 28, 0.903);
     transition: 0.6s ease-in-out;
   }
-  .header .navBar .navLists {
+
+  /* .header .navBar .navLists { */
+  .navLists {
     flex-direction: column;
     justify-content: center;
     width: 100%;
     margin: auto;
     padding: 0.5rem 0;
   }
-  .header .navBar .navLists .navItem {
+
+  /* .header .navBar .navLists .navItem { */
+  .navItem {
     padding: 0.5rem 0;
   }
-  .header .navBar .navLists .navItem .navLink {
+
+  /* .header .navBar .navLists .navItem .navLink { */
+  .navLink {
     color: var(--TextColor);
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .header .navBar .navLists .navItem .navLink:hover {
+
+  /* .header .navBar .navLists .navItem .navLink:hover { */
+  .navLink:hover {
     color: var(--PrimaryColor);
   }
-  .header .navBar .navLists .btn {
+
+  /* .header .navBar .navLists .btn { */
+  .btn {
     margin-top: 1rem;
   }
-  .header .navBar .navLists .btn a {
+
+  /* .header .navBar .navLists .btn a { */
+  .btn a {
     font-weight: 600;
     color: var(--WhiteColor);
   }
-  .header .navBar .closeNavbar {
+
+  /* .header .navBar .closeNavbar { */
+  .closeNavbar {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
     color: var(--PrimaryColor);
   }
+
   .header .navBar .closeNavbar:hover {
+    /* .closeNavbar:hover { */
     color: var(--SecondaryColor);
   }
 }
+
 .header .activeNavbar {
+  /* .activeNavbar { */
   top: 7rem;
 }
+
 .header .toggleNavbar .icon {
   font-size: 25px;
   color: var(--PrimaryColor);
 }
-.header .toggleNavbar:hover.icon {
+.header .toggleNavbar:hover .icon {
   color: var(--SecondaryColor);
 }
 
@@ -103,31 +122,33 @@
   .header {
     padding: 1.5rem 2rem;
   }
-  .header .navBar .navLists {
+
+  /* .header .navBar .navLists { */
+  .navLists {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
   }
-  .header .navBar .navLists .navItem .navLink {
+  .navLink {
     color: var(--TextColor);
     padding: 0 0.45rem;
     font-size: 0.9rem;
     font-weight: 500;
   }
-  .header .navBar .navLists .navItem .navLink:hover {
+  .navLink:hover {
     color: var(--PrimaryColor);
   }
-  .header .navBar .navLists .btn {
+  .btn {
     margin-left: 1rem;
   }
-  .header .navBar .navLists .btn a {
+  .btn a {
     color: var(--WhiteColor);
     font-weight: 500;
   }
 }
 @media screen and (min-width: 960px) {
-  .header .navBar .navLists .navItem {
+  .navItem {
     padding: 0 0.7rem;
   }
 }

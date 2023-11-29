@@ -26,7 +26,7 @@ const Navbar = () => {
             </h1>
           </a>
         </div>
-        <div className="active">
+        <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
               <a href="#" className="navLink">
