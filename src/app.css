@@ -26,6 +26,10 @@
   --CardBG: rgb(224, 224, 234);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }

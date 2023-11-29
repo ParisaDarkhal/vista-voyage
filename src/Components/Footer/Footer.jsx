@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./footer.css";
 import video2 from "../../Assets/video2.mp4";
 import { FiSend } from "react-icons/fi";
@@ -9,7 +9,16 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Footer = () => {
+  //to add scrol animation
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+  //
   return (
     <section className="footer">
       <div className="videoDiv">
@@ -17,15 +26,19 @@ const Footer = () => {
       </div>
 
       <div className="secContent container">
-        <div className="contentDiv flex">
-          <div className="text">
+        <div className="contactDiv flex">
+          <div data-aos="fade-up" className="text">
             <small>KEEP IN TOUCH!</small>
             <h2>Travel With Us</h2>
           </div>
 
           <div className="inputDiv flex">
-            <input type="text" placeholder="Enter Email Address" />
-            <button className="btn flex" type="submit">
+            <input
+              data-aos="fade-up"
+              type="text"
+              placeholder="Enter Email Address"
+            />
+            <button data-aos="fade-up" className="btn flex" type="submit">
               SEND <FiSend className="icon" />
             </button>
           </div>
@@ -39,13 +52,15 @@ const Footer = () => {
                 Vista Voyage!
               </a>
             </div>
-            <div className="footerParagraph">
-              Something something something Something something something
-              Something something something Something something something
-              Something something something Something something something
-              Something something something
+            <div data-aos="fade-up" className="footerParagraph">
+              "Experience luxury made affordable with Vista Voyage. Our journeys
+              redefine opulence, crafting unforgettable adventures accessible to
+              all. Discover dream getaways, meticulously designed for treasured
+              memories. Indulge in opulent travel without budget constraints –
+              turning your wanderlust into an affordable and unforgettable
+              reality."
             </div>
-            <div className="footerSocials flex">
+            <div data-aos="fade-up" className="footerSocials flex">
               <AiOutlineTwitter className="icon" />
               <AiFillYoutube className="icon" />
               <AiFillInstagram className="icon" />
@@ -54,7 +69,11 @@ const Footer = () => {
           </div>
           <div className="footerLinks grid">
             {/* group one */}
-            <div className="linkGroup">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="linkGroup"
+            >
               <span className="groupTitle">OUR AGENCY</span>
               <ul>
                 <li className="footerList flex">
@@ -81,7 +100,11 @@ const Footer = () => {
             </div>
 
             {/* group two  */}
-            <div className="linkGroup">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="4000"
+              className="linkGroup"
+            >
               <span className="groupTitle">PARTNERS</span>
               <ul>
                 <li className="footerList flex">
@@ -108,7 +131,11 @@ const Footer = () => {
             </div>
 
             {/* group three  */}
-            <div className="linkGroup">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="5000"
+              className="linkGroup"
+            >
               <span className="groupTitle">LAST MINUTE</span>
               <ul>
                 <li className="footerList flex">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./main.css";
 import img from "../../Assets/img.jpg";
 import img2 from "../../Assets/img2.jpg";
@@ -9,6 +9,9 @@ import img6 from "../../Assets/img6.jpg";
 import img7 from "../../Assets/img7.jpg";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Data = [
   {
@@ -84,17 +87,25 @@ const Data = [
 ];
 
 const Main = () => {
+  //to add scrol animation
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+  //
   return (
     <section className="main container section">
       <div className="secTitle">
-        <h3 className="title">Most Visited Destinations</h3>
+        <h3 data-aos="fade-right" className="title">
+          Most Visited Destinations
+        </h3>
       </div>
 
       <div className="secContent grid">
         {Data.map(
           ({ id, imgSrc, destTitle, location, grade, fees, description }) => {
             return (
-              <div className="singleDestination" key={id}>
+              <div data-aos="fade-up" className="singleDestination" key={id}>
                 <div className="imageDiv">
                   <img src={imgSrc} alt={destTitle} />
                 </div>
